@@ -1,0 +1,17 @@
+<ul>
+  <strong><%= @contact.name() %></strong>
+  <br>
+  <br>
+  Job Title: <%= @contact.job() %>
+  <br>
+  Company: <%= @contact.company() %>
+  <br>
+  Home Phone: <%= @phone.home() %>
+  <br>
+  Work Phone: <%= @phone.work() %>
+  <br>
+  Home Address: <%= @address.street() %>, <%= @address.city() %>, <%= @address.state() %> <%= @address.zip() %>
+  <br>
+  Work Address: <%= @address.workStreet() %>, <%= @address.workCity() %>, <%= @address.workState() %> <%= @address.workZip() %>
+
+</ul>
