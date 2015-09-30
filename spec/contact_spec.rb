@@ -32,29 +32,56 @@ describe(Address) do
 
   describe('#street') do
     it('returns the address street') do
-      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567"})
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
       expect(test_address.street()).to(eq("57 Barnes Rd."))
     end
   end
 
   describe('#city') do
     it('returns the address city') do
-      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567"})
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
       expect(test_address.city()).to(eq("Portland"))
     end
   end
 
   describe('#state') do
     it('returns the address state') do
-      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567"})
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
       expect(test_address.state()).to(eq("Oregon"))
     end
   end
 
   describe('#zip') do
     it('returns the address zip') do
-      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567"})
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
       expect(test_address.zip()).to(eq("97210"))
+    end
+  end
+
+  describe('#WorkStreet') do
+    it('returns the address street') do
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
+      expect(test_address.workStreet()).to(eq("23 Jordan Ln."))
+    end
+  end
+
+  describe('#WorkCity') do
+    it('returns the address city') do
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
+      expect(test_address.workCity()).to(eq("Beaverton"))
+    end
+  end
+  describe('#WorkState') do
+    it('returns the address state') do
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
+      expect(test_address.workState()).to(eq("Oregon"))
+    end
+  end
+
+  describe('#WorkZip') do
+    it('returns the address zip') do
+      test_address = Address.new({:street => "57 Barnes Rd.", :city => "Portland", :state => "Oregon", :zip => "97210", :number => "5031234567", :workStreet => "23 Jordan Ln.", :workCity => "Beaverton", :workState => "Oregon", :workZip => "97005"})
+      expect(test_address.workZip()).to(eq("97005"))
     end
   end
 end
