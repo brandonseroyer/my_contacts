@@ -2,7 +2,7 @@
 
 ##### _Allows the user to keep track of information in their contacts, September 28, 2015_
 
-#### By _**Brandon Seroyer && Trevor Scherling**_
+#### By _**Brandon Seroyer, Tyler Finley, and Trevor Scherling**_
 
 ## Description
 
@@ -22,7 +22,7 @@ _Ruby, Sinatra, Html_
 
 ### Legal
 
-Copyright (c) 2015 **_Brandon Seroyer && Trevor Scherling_**
+Copyright (c) 2015 **_Brandon Seroyer, Tyler Finley, and Trevor Scherling_**
 
 This software is licensed under the MIT license.
 
